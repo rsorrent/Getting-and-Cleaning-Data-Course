@@ -47,4 +47,4 @@ for (Label in activityLabels$V2)
  number <- number +1}
 #creating and writing a tidy data set
 tidydata <- aggregate(dataproject[,3:81], by=list( activity=dataproject$label, subject=dataproject$subject), mean)
-write.table(tidydata, ".tidydata.txt", row.name=F)
+write.table(tidydata, "tidydata.txt", row.name=F)
